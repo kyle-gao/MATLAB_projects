@@ -29,7 +29,7 @@ for i = 1:k
     differences(i,:,:) = X - C(i);    
 end
 
-%calculated norms
+%calculate norms
 for i = 1:k
     for j = 1:n
         vec = squeeze(differences(i,j,:));
