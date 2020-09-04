@@ -16,7 +16,7 @@ differences = zeros(k,n,d);
 distances = zeros(k,n);
 idx = zeros(n,1);
 
-%randomly sample 3 unique points from X as initial centroids
+%randomly sample k unique points from X as initial centroids
 C = datasample(X,k, 'replace',false);
 
 
