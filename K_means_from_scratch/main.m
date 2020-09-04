@@ -10,7 +10,7 @@ X = [normrnd(mu_1,sig_1,[100,2]);normrnd(mu_2,sig_2,[100,2])];
 %Matlab's k means
 opts = statset('Display','final');
 [idx,C] = kmeans(X,2,'Distance','cityblock',...
-    'Replicates',1,'Options',opts);
+    'Replicates',5,'Options',opts);
 
 figure;
 plot(X(idx==1,1),X(idx==1,2),'r.','MarkerSize',12)
