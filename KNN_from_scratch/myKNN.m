@@ -4,7 +4,7 @@
 %copy of the License at http://www.apache.org/licenses/LICENSE-2.0 .
 
 function [labels] = myKNN(X_train, Y_train, X_predict, k)
-%KNN Simple KNN classifier
+%Simple KNN classifier
 %Inputs
 % X_train - (m, num_features) array, X_training features
 % Y_train - (m, 1) string cell, the training labels
