@@ -23,7 +23,13 @@ classdef Tree
                 end
             end
             evaluation= acc/L;
-    end
+        end
+        
+        function prediction = predict(obj,X)
+            %returns a list of predictions for a list of features
+            prediction = Classify(X,obj.tree)        
+        end
+        
 end
 end
 
